@@ -1,36 +1,4 @@
-/* モーダルの背景 */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* モーダルの内容 */
-.modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-  border: 2px solid #ccc; /* フレームの追加 */
-  width: 50%; /* モーダルの幅 */
-  max-width: 600px; /* モーダルの最大幅 */
-}
-
-/* 閉じるボタン */
-.close-button {
-  float: right;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* +ボタンのスタイル */
+/* PlusButton のスタイリング */
 .round-button {
   position: fixed;
   bottom: 20px;
@@ -46,27 +14,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1050; /* モーダルのz-indexより高く */
+  z-index: 1050; /* 確実に他の要素より上に表示 */
 }
 
-/* フォームのスタイリング */
+/* PlusButton モーダルのスタイル */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  border: 2px solid #ccc;
+  width: 50%;
+  max-width: 600px;
+}
+
 form {
   display: flex;
   flex-direction: column;
 }
 
-/* ラベルと入力フィールドのスタイリング */
 label {
   margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="email"] {
-  padding: 8px;
-  margin-top: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+input[type="text"]{
+    padding: 8px;
+    width: 450px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
 
 button[type="submit"] {
   padding: 10px;
@@ -75,5 +65,11 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+.close-button {
+  float: right;
+  font-size: 24px;
   cursor: pointer;
 }

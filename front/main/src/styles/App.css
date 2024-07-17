@@ -1,79 +1,16 @@
-/* モーダルの背景 */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  /* モーダルの内容 */
-  .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-    border: 2px solid #ccc; /* フレームの追加 */
-    width: 50%; /* モーダルの幅 */
-    max-width: 600px; /* モーダルの最大幅 */
-  }
-  
-  /* 閉じるボタン */
-  .close-button {
-    float: right;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  /* +ボタンのスタイル */
-  .round-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 24px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1050; /* モーダルのz-indexより高く */
-  }
-  
-  /* フォームのスタイリング */
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* ラベルと入力フィールドのスタイリング */
-  label {
-    margin-bottom: 10px;
-  }
-  
-  input[type="text"],
-  input[type="email"] {
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button[type="submit"] {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
+/* 既存のスタイル */
+ul {
+  list-style-type: none; /* リストの点を消す */
+  padding: 0;
+}
+
+li {
+  padding: 8px; /* リストアイテムのパディングを設定 */
+  margin-bottom: 5px; /* リストアイテム間のマージン */
+  background-color: #f9f9f9; /* 背景色 */
+  border: 1px solid #ddd; /* ボーダー */
+  display: flex;
+  justify-content: space-between; /* コンテンツをスペースで均等に分ける */
+  align-items: center;
+}
+
